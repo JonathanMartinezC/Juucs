@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Login site </title>
+    </head>
+    <body>
+        <form action="logica/login.php" method="POST">
+            <label for="emailInput"> Correo electronico: </label> 
+            <br>
+            <input type="email" id="emailInput" name="email" required="required">
+            <br>
+            <label for="passInput"> Contraseña: </label> 
+            <br>
+            <input type="password" id="passInput" name="password" required="required">
+            <br> <br>
+            <button type="submit"> Enviar </button>
+        </form>
+        <p> ¿No posees una cuenta? </p>
+        <a href='registerSite.php'> Registrate </a>
+    </body>
+</html>
