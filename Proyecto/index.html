@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title> Login site </title>
-    </head>
-    <body>
-        <form action="logica/login.php" method="POST">
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login site </title>
+    <link rel="stylesheet" href="./estilos/registro_style.css">
+</head>
+<body>
+    <div class="fondo"></div>
+    <div class="fondo2"></div>
+    <div class="fondo3"></div>
+    <div class="fondo4"></div>
+    <header>
+        <div class="logo-container">
+            <h2 class="logo">JUUCS</h2>
+        </div>
+    </header>
+    <div class="registro">
+        <h1>Ingresa tu correo y contraseña</h1>
+        <form class="formulario" action="logica/login.php" method="POST">
             <label for="emailInput"> Correo electronico: </label> 
             <br>
             <input type="email" id="emailInput" name="email" required="required">
@@ -14,9 +28,10 @@
             <br>
             <input type="password" id="passInput" name="password" required="required">
             <br> <br>
-            <button type="submit"> Enviar </button>
+            <button type="submit"> Entrar </button>
         </form>
-        <p> ¿No posees una cuenta? </p>
-        <a href='registerSite.php'> Registrate </a>
-    </body>
+        <p> ¿Aun no tienes una cuenta? </p>
+        <a href='./registerSite.php'> Registrate </a>
+    </div>
+</body>
 </html>
